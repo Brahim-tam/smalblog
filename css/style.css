@@ -144,3 +144,11 @@ button {
         flex-direction: column;
     }
 }
+
+#footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #32a0c2;
+    text-align: center;
+}
