@@ -85,6 +85,7 @@ nav>ul>a {
     justify-content: center;
     align-items: center;
     margin-top: 15px;
+    border-bottom: 3px solid rgb(218, 169, 10);
 }
 
 #newsLater h1 {
@@ -152,4 +153,9 @@ button {
     color: #ffffff;
     background-color: #32a0c2;
     text-align: center;
+}
+
+#footer img {
+    height: 100px;
+    border-radius: 50%;
 }
