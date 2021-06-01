@@ -132,6 +132,7 @@ button {
     justify-content: center;
     align-content: center;
     align-items: center;
+    border-bottom: 3px solid rgb(218, 169, 10);
 }
 
 #boxes .box {
@@ -147,7 +148,7 @@ button {
 
 #footer {
     padding: 20px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     color: #ffffff;
     background-color: #32a0c2;
     text-align: center;
