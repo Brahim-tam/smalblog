@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@500&display=swap');
+#header {
+    /* font-size: 25px; */
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 3px solid rgb(218, 169, 10);
+    background-color: rgb(255, 255, 255);
+    padding: 25px 45px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main>section {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'El Messiri', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+    direction: rtl;
+}
+
+.heighlight,
+.current {
+    color: rgb(160, 27, 201);
+}
+
+a {
+    text-decoration: none;
+}
+
+nav>ul>li,
+nav>ul>a {
+    margin: 5px 0px 0px 5px;
+    color: rgb(103, 36, 228);
+    padding: 5px;
+    list-style-type: none;
+    float: right;
+    text-decoration: none;
+}
+
+#branding h1 {
+    font-size: 28px;
+}
+
+#showCase {
+    min-height: 400px;
+    background: url(../img/image.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 400PX;
+    color: whitesmoke;
+    text-align: center;
+}
+
+#showCase h1 {
+    font-size: 55px;
+    margin-top: 120px;
+    margin-bottom: 10px;
+    text-shadow: 5px 5px 5px black;
+}
+
+#showCase p {
+    text-shadow: 5px 5px 5px black;
+    font-size: 22px;
+}
+
+#newsLater {
+    background-color: white;
+    color: rgb(103, 36, 228);
+    padding: 15px 120px;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+#newsLater h1 {
+    float: right;
+}
+
+#newsLater form {
+    float: left;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#newsLater input[type='email'] {
+    width: 250px;
+    height: 25px;
+    padding: 4px;
+    font-size: 20px;
+}
+
+#newsLater>textarea:focus,
+input:focus {
+    outline: none;
+}
+
+button {
+    height: 38px;
+    padding: 0px 20px;
+    color: #ffffff;
+    background-color: rgb(103, 36, 228);
+    font-family: 'El Messiri', sans-serif;
+    font-size: large;
+    border: none;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+
+.box {
+    margin-top: 20px;
+    padding: 60px 120px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#boxes .box {
+    text-align: center;
+    margin-left: 10px;
+}
+
+@media (max-width: 1020px) {
+    #boxes {
+        flex-direction: column;
+    }
+}
