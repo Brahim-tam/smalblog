@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@500&display=swap');
-#header {
+#headerr {
     /* font-size: 25px; */
     justify-content: center;
     align-content: center;
@@ -9,6 +9,37 @@
     border-bottom: 3px solid rgb(218, 169, 10);
     background-color: rgb(255, 255, 255);
     padding: 25px 45px;
+}
+
+#header {
+    /* font-size: 15px; */
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    /* flex-flow: row wrap; */
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 25px 25px;
+    height: 6%;
+    position: fixed;
+}
+
+.lItem,
+.lLink,
+.sback {
+    margin: 5px 0px 0px 5px;
+    color: rgb(103, 36, 228);
+    padding: 0px 5px 10px 5px;
+    list-style-type: none;
+    float: right;
+    text-decoration: none;
+}
+
+#branding h1 {
+    font-size: 28px;
+    margin: 10px 0px 0px 0px;
+    flex-grow: 8;
 }
 
 main {
@@ -39,8 +70,9 @@ a {
     text-decoration: none;
 }
 
-nav>ul>li,
-nav>ul>a {
+.lItemm,
+.lLinkk,
+.sbackk {
     margin: 5px 0px 0px 5px;
     color: rgb(103, 36, 228);
     padding: 5px;
@@ -49,9 +81,12 @@ nav>ul>a {
     text-decoration: none;
 }
 
-#branding h1 {
+#brandingg h1 {
     font-size: 28px;
 }
+
+
+/* العرض المختصر و النص */
 
 #showCase {
     min-height: 400px;
@@ -75,7 +110,10 @@ nav>ul>a {
     font-size: 22px;
 }
 
-#newsLater {
+
+/* النشرة البريدية */
+
+#newsLetter {
     background-color: white;
     color: rgb(103, 36, 228);
     padding: 15px 120px;
@@ -85,14 +123,13 @@ nav>ul>a {
     justify-content: center;
     align-items: center;
     margin-top: 15px;
-    border-bottom: 3px solid rgb(218, 169, 10);
 }
 
-#newsLater h1 {
+#newsLetter h1 {
     float: right;
 }
 
-#newsLater form {
+#newsLetter form {
     float: left;
     display: flex;
     flex-flow: row wrap;
@@ -101,19 +138,23 @@ nav>ul>a {
     align-items: center;
 }
 
-#newsLater input[type='email'] {
+#newsLetter input[type='email'] {
     width: 250px;
     height: 25px;
     padding: 4px;
     font-size: 20px;
 }
 
-#newsLater>textarea:focus,
+
+/* لاخفاء التركيز عن منطقة ادخال البريد الالكتروني */
+
+#newsLetter>textarea:focus,
 input:focus {
     outline: none;
 }
 
 button {
+    cursor: pointer;
     height: 38px;
     padding: 0px 20px;
     color: #ffffff;
@@ -147,6 +188,12 @@ button {
     }
 }
 
+@media (max-width: 400px) {
+    #showCase {
+        min-height: 600px;
+    }
+}
+
 #footer {
     padding: 20px;
     /* margin-top: 20px; */
@@ -155,7 +202,65 @@ button {
     text-align: center;
 }
 
-#footer img {
-    height: 100px;
-    border-radius: 50%;
+
+/********القائمة الجانبية********/
+
+
+/* مواصفات نعطيها للقائمة الجانبية في الحالة العادية (الساكنة) */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 1s;
+    padding-top: 60px;
+}
+
+
+/* الروابط في القائمة الجانبية */
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+
+/* اثناء تمرير الماوس */
+
+.sidenav a:hover {
+    color: rgb(160, 27, 201);
+    background-color: rgba(239, 208, 248, 0.4);
+    border-radius: 10px;
+    transition: 1s;
+}
+
+
+/* خصائص زر اخفاء القائمة الجانبية */
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 25px;
+    margin-left: 50px;
+}
+
+
+/* خصائص التوافقية */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
 }

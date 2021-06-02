@@ -8,13 +8,25 @@
     <meta name="description" content="المبرمج سمّاني إبراهيم الخليل">
     <meta name="author" content="سمّاني إبراهيم الخليل">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>سمّاني إبراهيم الخليل</title>
 </head>
 
 <body>
+    <!-- القائمة الجانبية  -->
+    <div id="mySidenav" class="sidenav">
+        <!-- هنا عند الظغط يتم استدعاء الدالة closeNav()  -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span class="sback"><i class="fas fa-backward"></i></span></a>
+        <a href="#">آخر أعمالي</a>
+        <a href="#">أفضل أعمالي</a>
+        <a href="#">أشخاص أوصي بهم</a>
+        <a href="#">تواصل معي</a>
+    </div>
     <main>
-        <section id="header">
+        <section id="headerr">
+            <!-- style="flex-grow:8;" -->
             <div style="flex-grow:8;" id="branding">
                 <h1>
                     <a href="index.html">
@@ -25,12 +37,15 @@
             </div>
             <nav>
                 <ul>
-                    <a href="index.html">
-                        <li class="current">الصفحة الرئيسية</li>
+                    <a class="lLink" href="index.html">
+                        <li class="lItem" class="current">الصفحة الرئيسية</li>
                     </a>
-                    <a href="#">
-                        <li>معرض الاعمال</li>
+                    <a class="lLink" href="#">
+                        <li class="lItem">معرض الاعمال</li>
                     </a>
+                    <!-- هنا عندما يتم الظغط ينفد الحدث openNav() -->
+                    <li class="lItem"><span style="font-size:30px;cursor:pointer ; z-index: 0.9;position: fixed;" onclick="openNav()"><i class="fas fa-ellipsis-v"></i></span></li>
+
                 </ul>
             </nav>
 
@@ -42,7 +57,7 @@
             </h1>
             <p>إبداعي في هذا المجال ينطلق من حبِّي له , وشغفي به , رؤيتي نحوه تتمثل في المزيد من التألق للمحتوى العربي بهذا الخصوص , أنا مُستمر فاليستمر حبُّكم لي ❤</p>
         </section>
-        <section id="newsLater">
+        <section id="newsLetter">
             <h1 style="flex-grow: 8">إشترك بالنشرة البريدية</h1>
             <form action="">
                 <input type="email" style="flex-grow: 5" placeholder="ضع البريد الإلكتروني الخاص بك">
@@ -70,10 +85,12 @@
         </section>
         <section id="footer">
             <section id="footer">
-                <p> <img src="img/7.jpg" alt=""> الصفحة الشخصية سماني إبراهيم الخليل &copy; <span id="currentYear"></p>
+                <p> الصفحة الشخصية سماني إبراهيم الخليل &copy; <span id="currentYear"></p>
             </section>
         </section>
     </main>
+<script src="./js/script.js"></script>
+
 </body>
 
 </html>
